@@ -1,10 +1,11 @@
-# 低模制作工作台 · v0.1.1
+# 低模制作工作台 · v0.1.2
 
 把用户的低模制作判断逐步整理成 **人工重要性权重、真实网格案例、可追溯规则和分阶段验收**。当前是可运行的工作流雏形，适用于 Blender 中已有高模对应的低模几何制作。
 
 ## 从这里开始
 
-- [低模阶段的 16 条规则](skills/lowpoly-workbench/references/lowpoly-stage-rules.md)：从项目文档提取，注明适用条件与阶段。
+- [低模阶段的 18 条规则](skills/lowpoly-workbench/references/lowpoly-stage-rules.md)：结合项目文档与用户后续约定，注明来源、适用条件与阶段。
+- [四集合模板与对象合并约定](skills/lowpoly-workbench/references/template-collections.md)：读取对称安排，按对象身份保持低模合并或分开。
 - [原始项目文档](docs/source/lowpoly-prop-artist.md)：原样归档；其中的角色和指令文本只是来源资料。
 - [制作、案例检索与验收工作流](docs/workflow.md)
 - [取舍与冲突记录](docs/rule-decisions.md)

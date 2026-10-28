@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "stage": "lowpoly_geometry",
   "sources": {
     "project-document": {
@@ -12,7 +12,16 @@
     "user-decisions": {
       "file": "docs/workflow.md",
       "role": "summarized_explicit_project_decisions",
-      "decisions": ["manual_importance", "geometry_stage_only", "editable_quads_preferred", "evaluated_triangle_budget", "monument_specific_symmetry"]
+      "decisions": ["manual_importance", "geometry_stage_only", "editable_quads_preferred", "evaluated_triangle_budget", "monument_specific_symmetry", "four_collection_template", "object_identity_controls_joining"]
+    },
+    "template-user-decisions": {
+      "file": "skills/lowpoly-workbench/references/template-collections.md",
+      "role": "explicit_user_instruction_and_collection_screenshot",
+      "date": "2026-10-28",
+      "collections": ["前后对称", "四向对称", "自行判断", "高模"],
+      "object_grouping": "same_source_object_same_lowpoly_object_distinct_source_objects_stay_separate",
+      "welding": "not_implied_by_object_joining",
+      "actual_template_contents": "inspect_per_project"
     }
   },
   "rules": [
@@ -31,8 +40,10 @@
     {"id":"LP-013","topic":"asset_symmetry","source":"user-decisions","status":"asset_specific","check":"manual_or_asset_specific_geometry_check"},
     {"id":"LP-014","topic":"bake_feasibility","source_lines":[46,46,140,144],"source":"project-document","status":"planning_only_in_geometry_stage","check":"manual_no_bake_claim"},
     {"id":"LP-015","topic":"case_history_and_authorship","source":"user-decisions","status":"adopted","check":"case_schema_and_review_evidence_fields"},
-    {"id":"LP-016","topic":"layered_acceptance","source_lines":[201,237],"source":"project-document","additional_source":"user-decisions","status":"stage_specific","check":"partial_automation_plus_visual_and_user_review"}
+    {"id":"LP-016","topic":"layered_acceptance","source_lines":[201,237],"source":"project-document","additional_source":"user-decisions","status":"stage_specific","check":"partial_automation_plus_visual_and_user_review"},
+    {"id":"LP-017","topic":"template_collection_roles_and_symmetry","source":"template-user-decisions","status":"adopted_with_actual_template_inspection","check":"manual_collection_and_transform_review"},
+    {"id":"LP-018","topic":"object_identity_controls_joining","source":"template-user-decisions","status":"adopted_object_grouping_not_automatic_welding","check":"manual_source_to_lowpoly_object_mapping"}
   ],
   "deferred_topics": ["uv_layout", "texel_density", "texture_resolution", "padding", "normal_map_convention", "actual_baking", "lod", "collision", "fbx_export", "engine_validation"],
-  "limitations": ["rule_catalog_is_not_a_complete_rule_engine", "no_automatic_template_fitting", "no_full_asset_importance_budget_solver"]
+  "limitations": ["rule_catalog_is_not_a_complete_rule_engine", "no_automatic_template_fitting", "no_full_asset_importance_budget_solver", "no_complete_template_interpreter_or_object_mapping_validator"]
 }

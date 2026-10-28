@@ -22,7 +22,7 @@ def main():
     original = ROOT/source['file']
     assert hashlib.sha256(original.read_bytes()).hexdigest() == source['sha256'], 'Original document hash changed'
     assert len(original.read_text(encoding='utf-8-sig').splitlines()) == source['lines']
-    assert [r['id'] for r in rules['rules']] == [f'LP-{n:03d}' for n in range(1, 17)]
+    assert [r['id'] for r in rules['rules']] == [f'LP-{n:03d}' for n in range(1, 19)]
     for rule in rules['rules']:
         lines = rule.get('source_lines', [])
         assert len(lines) % 2 == 0
@@ -76,7 +76,8 @@ def main():
     finally:
         conn.close()
     report = read_json(sample/'report.json')
-    assert report['status'] == 'passed' and report['prototype_version'] == rules['version']
+    # Rule-only updates do not rewrite the version of an earlier geometry trial.
+    assert report['status'] == 'passed' and report['prototype_version'] == '0.1.1'
     assert report['scenario_commit'] == third_party['commit']
     assert report['blend_reopened'] and not report['user_asset_modified']
     assert not report['weights_painted'] and not report['bake_verified']

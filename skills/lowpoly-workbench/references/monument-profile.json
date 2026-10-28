@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
   "scope": "本次碑形静态资产；应用前核对对象，不作为通用默认值",
+  "current_template_precedence": "当前用户明确的模板对象划分与对称安排优先；下列历史参数须先核对，不据此跨对象合并",
   "stage": "lowpoly_geometry",
   "triangle_budget": {"min": 8000, "max": 10000, "measure": "evaluated_loop_triangles"},
   "exclude_roles": ["highpoly_source", "chain", "human_reference"],

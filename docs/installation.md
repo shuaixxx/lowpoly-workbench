@@ -39,4 +39,4 @@ blender --background --factory-startup --disable-autoexec --threads 2 --python-e
 
 ## 版本与数据
 
-Scenario 的两个 Skill 固定在 `third-party.json` 记录的提交。上游更新可能改变行为，应单独验证后再升级。规则文档和当前 Skill 为 v0.1.1，案例 JSON 的 `schema_version` 为 1；两种版本含义不同。
+Scenario 的两个 Skill 固定在 `third-party.json` 记录的提交。上游更新可能改变行为，应单独验证后再升级。规则文档和当前 Skill 为 v0.1.2，案例 JSON 的 `schema_version` 为 1；两种版本含义不同。仓库中的合成试验报告保留实际运行时的 v0.1.1 版本，规则更新不改写历史试验证据。

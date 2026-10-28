@@ -133,7 +133,7 @@ def main():
             sheet=review_meshes(V,[obj],out/'views'/obj.name,views=('front','threequarter'),modes=('matcap','wire'),res=320)
             assert obj.show_in_front==in_front, 'Review changed caller display state'
             render_paths.append(str(sheet))
-    result={'status':'passed','prototype_version':'0.1.1','blender_version':bpy.app.version_string,
+    result={'status':'passed','prototype_version':'0.1.2','blender_version':bpy.app.version_string,
             'scenario_commit':UPSTREAM_COMMIT,'tested_functions':['setup_cage','ring','tube','add_ring','bridge','bridge_reduce','tri_count','bx_review.review'],
             'compatibility_adjustments':['temporarily_clear_show_in_front_for_workbench_wire_review_and_restore'],
             'junction':junction,'objects':reports,'retrieval':retrieved,'locked_boundary_retrieval':locked,
