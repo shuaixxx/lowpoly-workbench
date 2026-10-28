@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "scope": "本次碑形静态资产；应用前核对对象，不作为通用默认值",
+  "stage": "lowpoly_geometry",
+  "triangle_budget": {"min": 8000, "max": 10000, "measure": "evaluated_loop_triangles"},
+  "exclude_roles": ["highpoly_source", "chain", "human_reference"],
+  "source_names_to_verify": ["高模", "低模", "低模1", "低模2", "低模3", "人"],
+  "body_symmetry": {"type": "rotation", "axis": "Z", "copies": 4},
+  "bear_symmetry": {"type": "mirror", "axis": "Y"},
+  "shaft_reference": "低模3：完整主平面和完整45度转角面，接缝沿已有棱线",
+  "importance": {"group": "lp_importance", "author": "user", "unassigned": "unknown", "explicit_zero": "low_priority"},
+  "require_consistent_bevels_for_equivalent_parts": true,
+  "uv_in_scope": false,
+  "baking_in_scope": false,
+  "provenance": "用户在本对话及引用对话中的明确要求，2026-10-28 整理"
+}

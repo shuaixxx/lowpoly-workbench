@@ -1,0 +1,5 @@
+rows x cols (top-left first):
+matcap / front
+matcap / threequarter
+wire / front
+wire / threequarter

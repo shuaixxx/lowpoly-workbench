@@ -1,0 +1,4 @@
+interface:
+  display_name: "低模制作工作台"
+  short_description: "依据人工区域权重制作可编辑低模，检索网格案例并分阶段验收"
+  default_prompt: "使用 $lowpoly-workbench 检查当前资产、确认人工区域权重，再按当前制作阶段完善低模。"

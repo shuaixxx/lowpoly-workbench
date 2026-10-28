@@ -1,0 +1,437 @@
+{
+  "status": "passed",
+  "prototype_version": "0.1.1",
+  "blender_version": "5.0.1",
+  "scenario_commit": "d44410f058991f677ccf733a8e86ce95110857eb",
+  "tested_functions": [
+    "setup_cage",
+    "ring",
+    "tube",
+    "add_ring",
+    "bridge",
+    "bridge_reduce",
+    "tri_count",
+    "bx_review.review"
+  ],
+  "compatibility_adjustments": [
+    "temporarily_clear_show_in_front_for_workbench_wire_review_and_restore"
+  ],
+  "junction": {
+    "faces": 20,
+    "units": 4,
+    "poles": [
+      56,
+      57,
+      49,
+      50,
+      58,
+      59,
+      51,
+      52,
+      60,
+      61,
+      53,
+      54,
+      62,
+      63,
+      55,
+      48
+    ]
+  },
+  "objects": [
+    {
+      "object": "Tube_08",
+      "blender_version": "5.0.1",
+      "control": {
+        "vertices": 40,
+        "faces": 32,
+        "quads": 32
+      },
+      "evaluated": {
+        "vertices": 40,
+        "faces": 32,
+        "triangles": 64
+      },
+      "topology": {
+        "boundary_edges": 16,
+        "nonmanifold_edges_excluding_boundaries": 0,
+        "loose_vertices": 0,
+        "zero_area_faces": 0
+      },
+      "importance": {
+        "group": "lp_importance",
+        "assigned": 0,
+        "unassigned": 40,
+        "explicit_zero": 0,
+        "ready": false
+      },
+      "uv_layers": 0,
+      "modifiers": [],
+      "bake_verified": false,
+      "user_review": "pending"
+    },
+    {
+      "object": "Tube_16",
+      "blender_version": "5.0.1",
+      "control": {
+        "vertices": 80,
+        "faces": 64,
+        "quads": 64
+      },
+      "evaluated": {
+        "vertices": 80,
+        "faces": 64,
+        "triangles": 128
+      },
+      "topology": {
+        "boundary_edges": 32,
+        "nonmanifold_edges_excluding_boundaries": 0,
+        "loose_vertices": 0,
+        "zero_area_faces": 0
+      },
+      "importance": {
+        "group": "lp_importance",
+        "assigned": 0,
+        "unassigned": 80,
+        "explicit_zero": 0,
+        "ready": false
+      },
+      "uv_layers": 0,
+      "modifiers": [],
+      "bake_verified": false,
+      "user_review": "pending"
+    },
+    {
+      "object": "Transition_16_to_08",
+      "blender_version": "5.0.1",
+      "control": {
+        "vertices": 72,
+        "faces": 60,
+        "quads": 60
+      },
+      "evaluated": {
+        "vertices": 72,
+        "faces": 60,
+        "triangles": 120
+      },
+      "topology": {
+        "boundary_edges": 24,
+        "nonmanifold_edges_excluding_boundaries": 0,
+        "loose_vertices": 0,
+        "zero_area_faces": 0
+      },
+      "importance": {
+        "group": "lp_importance",
+        "assigned": 0,
+        "unassigned": 72,
+        "explicit_zero": 0,
+        "ready": false
+      },
+      "uv_layers": 0,
+      "modifiers": [],
+      "bake_verified": false,
+      "user_review": "pending"
+    },
+    {
+      "object": "Tube_08_Triangles",
+      "blender_version": "5.0.1",
+      "control": {
+        "vertices": 40,
+        "faces": 64,
+        "quads": 0
+      },
+      "evaluated": {
+        "vertices": 40,
+        "faces": 64,
+        "triangles": 64
+      },
+      "topology": {
+        "boundary_edges": 16,
+        "nonmanifold_edges_excluding_boundaries": 0,
+        "loose_vertices": 0,
+        "zero_area_faces": 0
+      },
+      "importance": {
+        "group": "lp_importance",
+        "assigned": 0,
+        "unassigned": 40,
+        "explicit_zero": 0,
+        "ready": false
+      },
+      "uv_layers": 0,
+      "modifiers": [],
+      "bake_verified": false,
+      "user_review": "pending"
+    }
+  ],
+  "retrieval": {
+    "query": "trial-Tube_08",
+    "query_descriptor": {
+      "vertices": 40,
+      "edges": 72,
+      "faces": 32,
+      "triangle_equivalent": 64,
+      "face_arities": {
+        "4": 32
+      },
+      "vertex_valences": {
+        "3": 16,
+        "4": 24
+      },
+      "boundary_loops": 2,
+      "boundary_vertices": 16,
+      "components": 1,
+      "nonmanifold_edges": 0,
+      "euler": 0,
+      "all_quads": true,
+      "planar": false,
+      "shape_variance_ratios": [
+        0.38489356156857574,
+        0.30755321921571216,
+        0.30755321921571216
+      ],
+      "wl_signature": "519837ef9e18ead7386d1cc2bc2ed07927e6cca2e96843da5544998df79a8ecb",
+      "mesh_sha256": "fc4d54404c5c7f9b9358df51f404bc1e403f525cb977c2632cfaaedd3716d658"
+    },
+    "method": "coarse_structural_filter_and_covariance_ranking_v1",
+    "quality_score": null,
+    "results": [
+      {
+        "id": "trial-Tube_08",
+        "name": "Tube_08",
+        "status": "unreviewed",
+        "descriptor_distance": 0.0,
+        "matched": [
+          "same_planarity",
+          "compatible_scope",
+          "same_components",
+          "same_boundary_loop_count",
+          "all_quads"
+        ],
+        "boundary_vertices_match": true,
+        "wl_signature_match": true,
+        "descriptor": {
+          "all_quads": true,
+          "boundary_loops": 2,
+          "boundary_vertices": 16,
+          "components": 1,
+          "edges": 72,
+          "euler": 0,
+          "face_arities": {
+            "4": 32
+          },
+          "faces": 32,
+          "mesh_sha256": "fc4d54404c5c7f9b9358df51f404bc1e403f525cb977c2632cfaaedd3716d658",
+          "nonmanifold_edges": 0,
+          "planar": false,
+          "shape_variance_ratios": [
+            0.38489356156857574,
+            0.30755321921571216,
+            0.30755321921571216
+          ],
+          "triangle_equivalent": 64,
+          "vertex_valences": {
+            "3": 16,
+            "4": 24
+          },
+          "vertices": 40,
+          "wl_signature": "519837ef9e18ead7386d1cc2bc2ed07927e6cca2e96843da5544998df79a8ecb"
+        },
+        "requires": [
+          "boundary_correspondence_check",
+          "visual_review",
+          "importance_mapping_check"
+        ]
+      },
+      {
+        "id": "trial-Tube_16",
+        "name": "Tube_16",
+        "status": "unreviewed",
+        "descriptor_distance": 2.399844978510541e-09,
+        "matched": [
+          "same_planarity",
+          "compatible_scope",
+          "same_components",
+          "same_boundary_loop_count",
+          "all_quads"
+        ],
+        "boundary_vertices_match": false,
+        "wl_signature_match": false,
+        "descriptor": {
+          "all_quads": true,
+          "boundary_loops": 2,
+          "boundary_vertices": 32,
+          "components": 1,
+          "edges": 144,
+          "euler": 0,
+          "face_arities": {
+            "4": 64
+          },
+          "faces": 64,
+          "mesh_sha256": "792c521ccde1c4d1d544efa8232995ad8a8104f756d429fe8593ae6c0a8fc44b",
+          "nonmanifold_edges": 0,
+          "planar": false,
+          "shape_variance_ratios": [
+            0.38489356352804094,
+            0.30755321823597953,
+            0.30755321823597953
+          ],
+          "triangle_equivalent": 128,
+          "vertex_valences": {
+            "3": 32,
+            "4": 48
+          },
+          "vertices": 80,
+          "wl_signature": "56a75cbab699e508252cef0a718801e99ce7cad316bd5b3e2602cbc6217296ff"
+        },
+        "requires": [
+          "boundary_correspondence_check",
+          "visual_review",
+          "importance_mapping_check"
+        ]
+      },
+      {
+        "id": "trial-Transition_16_to_08",
+        "name": "Transition_16_to_08",
+        "status": "unreviewed",
+        "descriptor_distance": 0.05720817005336362,
+        "matched": [
+          "same_planarity",
+          "compatible_scope",
+          "same_components",
+          "same_boundary_loop_count",
+          "all_quads"
+        ],
+        "boundary_vertices_match": false,
+        "wl_signature_match": false,
+        "descriptor": {
+          "all_quads": true,
+          "boundary_loops": 2,
+          "boundary_vertices": 24,
+          "components": 1,
+          "edges": 132,
+          "euler": 0,
+          "face_arities": {
+            "4": 60
+          },
+          "faces": 60,
+          "mesh_sha256": "c833521e833d759b08572489db168e1d086279d72a8575bb0773d70d6f8df8b8",
+          "nonmanifold_edges": 0,
+          "planar": false,
+          "shape_variance_ratios": [
+            0.33818328631887246,
+            0.33090835684056386,
+            0.33090835684056386
+          ],
+          "triangle_equivalent": 120,
+          "vertex_valences": {
+            "3": 32,
+            "4": 32,
+            "5": 8
+          },
+          "vertices": 72,
+          "wl_signature": "4534af020cb6dbbf8dd702b786a688953d0ab3a9da88118185930adb1d7331bc"
+        },
+        "requires": [
+          "boundary_correspondence_check",
+          "visual_review",
+          "importance_mapping_check"
+        ]
+      }
+    ]
+  },
+  "locked_boundary_retrieval": {
+    "query": "trial-Tube_08",
+    "query_descriptor": {
+      "vertices": 40,
+      "edges": 72,
+      "faces": 32,
+      "triangle_equivalent": 64,
+      "face_arities": {
+        "4": 32
+      },
+      "vertex_valences": {
+        "3": 16,
+        "4": 24
+      },
+      "boundary_loops": 2,
+      "boundary_vertices": 16,
+      "components": 1,
+      "nonmanifold_edges": 0,
+      "euler": 0,
+      "all_quads": true,
+      "planar": false,
+      "shape_variance_ratios": [
+        0.38489356156857574,
+        0.30755321921571216,
+        0.30755321921571216
+      ],
+      "wl_signature": "519837ef9e18ead7386d1cc2bc2ed07927e6cca2e96843da5544998df79a8ecb",
+      "mesh_sha256": "fc4d54404c5c7f9b9358df51f404bc1e403f525cb977c2632cfaaedd3716d658"
+    },
+    "method": "coarse_structural_filter_and_covariance_ranking_v1",
+    "quality_score": null,
+    "results": [
+      {
+        "id": "trial-Tube_08",
+        "name": "Tube_08",
+        "status": "unreviewed",
+        "descriptor_distance": 0.0,
+        "matched": [
+          "same_planarity",
+          "compatible_scope",
+          "same_components",
+          "same_boundary_loop_count",
+          "all_quads"
+        ],
+        "boundary_vertices_match": true,
+        "wl_signature_match": true,
+        "descriptor": {
+          "all_quads": true,
+          "boundary_loops": 2,
+          "boundary_vertices": 16,
+          "components": 1,
+          "edges": 72,
+          "euler": 0,
+          "face_arities": {
+            "4": 32
+          },
+          "faces": 32,
+          "mesh_sha256": "fc4d54404c5c7f9b9358df51f404bc1e403f525cb977c2632cfaaedd3716d658",
+          "nonmanifold_edges": 0,
+          "planar": false,
+          "shape_variance_ratios": [
+            0.38489356156857574,
+            0.30755321921571216,
+            0.30755321921571216
+          ],
+          "triangle_equivalent": 64,
+          "vertex_valences": {
+            "3": 16,
+            "4": 24
+          },
+          "vertices": 40,
+          "wl_signature": "519837ef9e18ead7386d1cc2bc2ed07927e6cca2e96843da5544998df79a8ecb"
+        },
+        "requires": [
+          "boundary_correspondence_check",
+          "visual_review",
+          "importance_mapping_check"
+        ]
+      }
+    ]
+  },
+  "blend_reopened": true,
+  "blend": "examples/scenario-002/scenario_trial.blend",
+  "database": "examples/scenario-002/cases.sqlite3",
+  "review_sheets": [
+    "examples/scenario-002/views/Tube_08/review_sheet.png",
+    "examples/scenario-002/views/Tube_16/review_sheet.png",
+    "examples/scenario-002/views/Transition_16_to_08/review_sheet.png"
+  ],
+  "user_asset_modified": false,
+  "weights_painted": false,
+  "bake_verified": false,
+  "user_acceptance": "pending",
+  "published_paths": "Relative to repository root; only report paths normalized, geometry and diagnostics unchanged."
+}

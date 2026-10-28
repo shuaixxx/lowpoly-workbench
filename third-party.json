@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/scenario-labs/skills",
+  "commit": "d44410f058991f677ccf733a8e86ce95110857eb",
+  "license": "MIT",
+  "bundled_skills": [
+    "scenario-blender-expert",
+    "scenario-blender-retopology"
+  ],
+  "local_modifications": "Only the root MIT LICENSE was included in each bundled skill; upstream code is unchanged."
+}

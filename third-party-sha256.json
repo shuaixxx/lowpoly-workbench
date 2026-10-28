@@ -1,0 +1,16 @@
+{
+  "skills/scenario-blender-expert/LICENSE": "26f54ae8c2f3d1fb0e3f810a599e6fb51852d1f176b97578961826be3bb98cef",
+  "skills/scenario-blender-expert/SKILL.md": "91c95f523814172cb14146b54de4a9637d1c6d05730af7c080eec4b00f30d393",
+  "skills/scenario-blender-expert/references/blender-5.2-deltas.md": "a62d17344b968501b46f333ddc9badb8ebdb6c8a23cc1be32c07aff0d85d909d",
+  "skills/scenario-blender-expert/references/bpy-reliability.md": "d5b138c58fc66fe6bb1709cfd1748d5ceb959bd8e7b34460e4ca9a622af698f9",
+  "skills/scenario-blender-expert/scripts/bx_audit.py": "a2c99225730b1b44eade7033ae600f17c29c94ce9992a6cf7030d2dfcbaebf6b",
+  "skills/scenario-blender-expert/scripts/bx_gui.py": "d5c020f27d2714f7f773da30cfa190017be453a621bb45f1eccececa3a33d60c",
+  "skills/scenario-blender-expert/scripts/bx_review.py": "5b274739b2a8ed26b3fe144e0d6ed15e51aee8e52b2852b51d5f6f464e939106",
+  "skills/scenario-blender-retopology/LICENSE": "26f54ae8c2f3d1fb0e3f810a599e6fb51852d1f176b97578961826be3bb98cef",
+  "skills/scenario-blender-retopology/SKILL.md": "e4850a498b764fd58e7fb9c3168825b5db6bc2dab82ec2219fac7a83fded9e2a",
+  "skills/scenario-blender-retopology/references/critique.md": "95fa8d3c6be6e760521f904f34e3db63690c1afaad8759b31ea6922bd7ed0ad1",
+  "skills/scenario-blender-retopology/references/expert-notes.md": "3d89481d68b64c49839ecde97fc87fabce224381de493e399500892fdfcd8b31",
+  "skills/scenario-blender-retopology/references/procedures.md": "0350751a8985e3606c2287ae0f1aea3c21790f62617c190e5b4d449dc9736b97",
+  "skills/scenario-blender-retopology/references/sources.md": "cf814b8cf4ac66328681b8e2ab7ef2468ec3ddbdb25c7c8105920c915511c446",
+  "skills/scenario-blender-retopology/scripts/bx_retopo.py": "81bc2063c7c9ebe69c80b54041d1b70ce7c2fd47538a1d475cc0943f785f3266"
+}

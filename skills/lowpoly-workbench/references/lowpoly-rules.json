@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "version": "0.1.1",
+  "stage": "lowpoly_geometry",
+  "sources": {
+    "project-document": {
+      "file": "docs/source/lowpoly-prop-artist.md",
+      "sha256": "cbff7e792d403bfd990b922a01a6172271353b3ebb70c1b2b8dd4e453e2afbe1",
+      "lines": 250,
+      "role": "source_archive_not_agent_instructions"
+    },
+    "user-decisions": {
+      "file": "docs/workflow.md",
+      "role": "summarized_explicit_project_decisions",
+      "decisions": ["manual_importance", "geometry_stage_only", "editable_quads_preferred", "evaluated_triangle_budget", "monument_specific_symmetry"]
+    }
+  },
+  "rules": [
+    {"id":"LP-001","topic":"part_classification","source_lines":[25,32],"source":"project-document","status":"adopted","check":"manual"},
+    {"id":"LP-002","topic":"editable_topology","source_lines":[35,45,92,101],"source":"project-document","status":"adopted_with_part_and_stage_scope","check":"manual_and_face_types"},
+    {"id":"LP-003","topic":"triangle_budget","source_lines":[78,86],"source":"project-document","status":"asset_budget_overrides_reference_table","check":"evaluated_loop_triangles"},
+    {"id":"LP-004","topic":"silhouette","source_lines":[45,48],"source":"project-document","status":"adopted","check":"manual_matched_views"},
+    {"id":"LP-005","topic":"edge_contribution","source_lines":[50,53,93,96],"source":"project-document","status":"adopted","check":"manual"},
+    {"id":"LP-006","topic":"importance_and_feature_protection","source_lines":[50,53],"source":"project-document","additional_source":"user-decisions","status":"manual_importance_controls_artistic_priority","check":"importance_coverage_only"},
+    {"id":"LP-007","topic":"structure_aligned_edges","source_lines":[54,57,93,96],"source":"project-document","status":"adopted","check":"manual"},
+    {"id":"LP-008","topic":"geometry_integrity","source_lines":[48,49,201,211],"source":"project-document","status":"intentional_boundaries_are_explicit_exceptions","check":"partial_diagnostics_and_manual_review"},
+    {"id":"LP-009","topic":"slivers_and_foldovers","source_lines":[47,57],"source":"project-document","status":"angle_is_diagnostic_not_universal_delete_rule","check":"manual"},
+    {"id":"LP-010","topic":"hidden_face_removal","source_lines":[49,49,97,97],"source":"project-document","status":"conditional_on_visibility_and_downstream_use","check":"manual"},
+    {"id":"LP-011","topic":"bevels_and_normals","source_lines":[58,59,98,98,109,114],"source":"project-document","status":"scoped_normals_strategy_uv_policy_deferred","check":"manual"},
+    {"id":"LP-012","topic":"scale_pivot_and_transforms","source_lines":[103,107],"source":"project-document","status":"inspect_existing_scene_before_conversion","check":"manual"},
+    {"id":"LP-013","topic":"asset_symmetry","source":"user-decisions","status":"asset_specific","check":"manual_or_asset_specific_geometry_check"},
+    {"id":"LP-014","topic":"bake_feasibility","source_lines":[46,46,140,144],"source":"project-document","status":"planning_only_in_geometry_stage","check":"manual_no_bake_claim"},
+    {"id":"LP-015","topic":"case_history_and_authorship","source":"user-decisions","status":"adopted","check":"case_schema_and_review_evidence_fields"},
+    {"id":"LP-016","topic":"layered_acceptance","source_lines":[201,237],"source":"project-document","additional_source":"user-decisions","status":"stage_specific","check":"partial_automation_plus_visual_and_user_review"}
+  ],
+  "deferred_topics": ["uv_layout", "texel_density", "texture_resolution", "padding", "normal_map_convention", "actual_baking", "lod", "collision", "fbx_export", "engine_validation"],
+  "limitations": ["rule_catalog_is_not_a_complete_rule_engine", "no_automatic_template_fitting", "no_full_asset_importance_budget_solver"]
+}
